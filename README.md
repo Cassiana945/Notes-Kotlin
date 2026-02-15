@@ -1,6 +1,7 @@
 ## Notas Kotlin
 ### Aplicativo de Notas usando kotlin e CRUD com room database 
 
+Foi usado fragments para fazer a parte do CRUD, RecyclerView para mostrar as notas e navigation graph para gerenciar a navegação do app.  
 
 <p align="left">
   <img src="imagens/1.jpg" width="200" />
