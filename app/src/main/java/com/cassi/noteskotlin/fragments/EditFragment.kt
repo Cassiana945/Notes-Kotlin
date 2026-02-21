@@ -94,8 +94,8 @@ class EditFragment : Fragment(R.layout.fragment_edit), MenuProvider {
         }
     }
 
-    override fun onDestroy() {
-        super.onDestroy()
+    override fun onDestroyView() {
+        super.onDestroyView()
         editBinding = null
     }
 }

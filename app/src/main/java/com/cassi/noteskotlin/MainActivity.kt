@@ -1,7 +1,6 @@
 package com.cassi.noteskotlin
 
 import android.os.Bundle
-import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AppCompatActivity
 import androidx.lifecycle.ViewModelProvider
 import com.cassi.noteskotlin.database.NoteDatabase

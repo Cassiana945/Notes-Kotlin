@@ -83,7 +83,7 @@ class HomeFragment : Fragment(R.layout.fragment_home), SearchView.OnQueryTextLis
     private fun searchNote(query: String?){
         val searchQuery = "%$query"
 
-        notesViewModel.searhNotes(searchQuery).observe(this){ list ->
+        notesViewModel.searhNotes(searchQuery).observe(viewLifecycleOwner){ list ->
             noteAdapter.differ.submitList(list)
         }
     }
@@ -99,8 +99,8 @@ class HomeFragment : Fragment(R.layout.fragment_home), SearchView.OnQueryTextLis
         return true
     }
 
-    override fun onDestroy() {
-        super.onDestroy()
+    override fun onDestroyView() {
+        super.onDestroyView()
         homeBinding = null
     }
 
